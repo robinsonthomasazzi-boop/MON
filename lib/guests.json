@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "john-family",
+    "name": "John Family",
+    "salutation": "Dear John Family"
+  },
+  {
+    "slug": "sarah-plus-one",
+    "name": "Sarah + 1",
+    "salutation": "Dear Sarah"
+  },
+  {
+    "slug": "family-smith",
+    "name": "Smith Family",
+    "salutation": "Dear Smith Family"
+  }
+]

@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Luxury Wedding Palette */
+  --background: #FFFDF8;
+  --foreground: #2d2d2d;
+  --card: rgba(255, 253, 248, 0.85);
+  --card-foreground: #2d2d2d;
+  --popover: rgba(255, 253, 248, 0.90);
+  --popover-foreground: #2d2d2d;
+  --primary: #A67C6B;
+  --primary-foreground: #FFFDF8;
+  --secondary: #D8A5A5;
+  --secondary-foreground: #2d2d2d;
+  --muted: #F4E6D7;
+  --muted-foreground: #8b8b8b;
+  --accent: #D4B483;
+  --accent-foreground: #FFFDF8;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #F4E6D7;
+  --input: #FFFDF8;
+  --ring: #A67C6B;
+  --chart-1: #A67C6B;
+  --chart-2: #D8A5A5;
+  --chart-3: #D4B483;
+  --chart-4: #F4E6D7;
+  --chart-5: #8b8b8b;
+  --radius: 1rem;
+}
+
+@theme inline {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-sans: 'Cormorant Garamond', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-bold;
+  }
+
+  p, span {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  /* Wedding-specific animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s ease-in-out infinite;
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    @apply backdrop-blur-md;
+    background: rgba(255, 253, 248, 0.85);
+    border: 1px solid rgba(244, 230, 215, 0.5);
+  }
+
+  /* Soft shadow utility */
+  .soft-shadow {
+    box-shadow: 0 10px 40px rgba(166, 124, 107, 0.08);
+  }
+
+  /* Text shadow for readability */
+  .text-shadow-sm {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
