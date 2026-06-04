@@ -25,11 +25,11 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: 'https://alan-aneena.abm.mom/wedding-share-2026.jpg',
+        url: 'https://alan-aneena.abm.mom/wedding-share-2026.png',
         width: 1200,
         height: 630,
         alt: 'Alan & Aneena Wedding',
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       'Join us for our wedding celebration at St. George Church, Kanhiradukam',
 
     images: [
-      'https://alan-aneena.abm.mom/wedding-share-2026.jpg',
+      'https://alan-aneena.abm.mom/wedding-share-2026.png',
     ],
   },
 }
