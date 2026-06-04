@@ -7,29 +7,43 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Alan & Aneena - Wedding Ceremony',
-  description: 'Join us on 29 June 2026 as Alan and Aneena begin their beautiful journey together at St. George Church, Kanhiradukam.',
+
+  description:
+    'Join us on 29 June 2026 as Alan and Aneena begin their beautiful journey together.',
+
   openGraph: {
     title: 'Alan & Aneena - Wedding Ceremony',
-    description: 'Join us for our wedding celebration at St. George Church, Kanhiradukam',
+
+    description:
+      'Join us for our wedding celebration at St. George Church, Kanhiradukam',
+
+    url: 'https://alan-aneena.abm.mom/wedding',
+
+    siteName: 'Alan & Aneena Wedding',
+
+    type: 'website',
+
     images: [
       {
-        url: 'https://alan-aneena.abm.mom/og-wedding.png',
+        url: 'https://alan-aneena.abm.mom/wedding-share-2026.jpg',
         width: 1200,
         height: 630,
         alt: 'Alan & Aneena Wedding',
+        type: 'image/jpeg',
       },
     ],
   },
-};
 
-export default function WeddingPage() {
-  return (
-    <main className="w-full">
-      <HeroSection />
-      <OurStorySection />
-      <EventDetailsSection />
-      <LocationSection />
-      <FooterSection />
-    </main>
-  );
+  twitter: {
+    card: 'summary_large_image',
+
+    title: 'Alan & Aneena - Wedding Ceremony',
+
+    description:
+      'Join us for our wedding celebration at St. George Church, Kanhiradukam',
+
+    images: [
+      'https://alan-aneena.abm.mom/wedding-share-2026.jpg',
+    ],
+  },
 }
