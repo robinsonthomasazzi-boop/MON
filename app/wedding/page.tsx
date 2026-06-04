@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Join us for our wedding celebration at St. George Church, Kanhiradukam',
     images: [
       {
-        url: '/og-wedding.png',
+        url: 'https://alan-aneena.abm.mom/og-wedding.png',
         width: 1200,
         height: 630,
         alt: 'Alan & Aneena Wedding',
