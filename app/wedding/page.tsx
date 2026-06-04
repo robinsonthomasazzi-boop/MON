@@ -46,4 +46,16 @@ export const metadata: Metadata = {
       'https://alan-aneena.abm.mom/wedding-share-2026.png',
     ],
   },
+};
+
+export default function WeddingPage() {
+  return (
+    <main className="w-full">
+      <HeroSection />
+      <OurStorySection />
+      <EventDetailsSection />
+      <LocationSection />
+      <FooterSection />
+    </main>
+  );
 }
