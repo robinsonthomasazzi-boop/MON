@@ -7,6 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://alan-aneena.abm.mom'),
   title: 'Alan & Aneena - Wedding Invitation',
   description: 'Join us to celebrate the wedding of Alan and Aneena',
   generator: 'v0.app',

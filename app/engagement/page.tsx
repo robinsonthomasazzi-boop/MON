@@ -35,7 +35,7 @@ export default function EngagementPage() {
         }}
       >
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/32" />
+        <div className="absolute inset-0 bg-black/21" />
 
         {/* Content */}
         <motion.div
